@@ -1,0 +1,43 @@
+//Javascript function that takes an integer and returns whether its a repeated one or not print true if its repeated else print false</title>
+
+	function rept(num){
+		var i;
+		num = num.toString();
+		z = num.split('');
+		x = Number(z.length);
+		return(z[x-1] == z[x-2]);
+		
+	}
+
+
+
+
+//Create a function that takes array of numbers and returns the second largest number.
+		
+		function arr_large(a){ 
+			a.sort();
+			a.reverse();
+			return a[1];
+
+		}
+	
+	console.log("The second largest number is: " + arr_large([21,25,91,20]));
+	
+	
+
+
+//Create a function that squares every digit of a number.
+
+	
+
+		function sqrnum(num){
+    		var i, square=[],n;
+    		num = num.toString();
+    		for(i=0;i<num.length;i++){
+        		n = Number(num[i]);
+    			square.push(n*n);
+    		}
+    		return Number(square.join(""));
+		}
+			console.log(sqrnum(2345));						
+	
